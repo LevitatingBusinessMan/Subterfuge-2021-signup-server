@@ -4,9 +4,16 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+	margin: 0px;
+}
+
 body {
 	text-align: center;
 	background-image: url("/img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header {
