@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		link rel="preconnect" href="https://fonts.gstatic.com"
+		link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"
+		link href="./css/style.css" rel="stylesheet"
+	body
+		header
+			h1 Subterfuge 2021
+		.signup
+			- names = get_names
+			h1
+				= "Signup (#{10-names.length} left)"
+			form action="/signup" method="post"
+				input name="name" placeholder="name"
+				input type="submit"
+			h1 Attendees:
+			ul
+				- for name in names
+					li #{name}
